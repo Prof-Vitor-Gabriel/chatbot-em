@@ -21,6 +21,8 @@ let aleatorio;
 let estado = 0;
 
 function enviar() {
+  if(caixaDeTexto.value == "")
+    return;
   if (estado == 0) {
     inicio();
     caixaDeTexto.value = "";
