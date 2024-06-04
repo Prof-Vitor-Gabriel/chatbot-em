@@ -2,27 +2,25 @@ let caixaDeTexto = document.querySelector("#mensagem");
 
 let caixaDeResposta = document.querySelector("#resposta");
 
-caixaDeTexto.onkeydown = function(event){
-  if(event.key === 'Enter') {
-      enviar();        
+caixaDeTexto.onkeydown = function (event) {
+  if (event.key === "Enter") {
+    enviar();
   }
-}
-
+};
 
 let respostas1 = [
   "Oi",
   "Olá!",
   "Bem-vindo ao sistema",
   "Iniciando...",
-  "Olar 😊"
+  "Olar 😊",
 ];
 let aleatorio;
 
 let estado = 0;
 
 function enviar() {
-  if(caixaDeTexto.value == "")
-    return;
+  if (caixaDeTexto.value == "") return;
   if (estado == 0) {
     inicio();
     caixaDeTexto.value = "";

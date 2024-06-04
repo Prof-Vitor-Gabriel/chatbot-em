@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h3>Chatbot v3</h3>
-    <input type="text" name="mensagem" id="mensagem" />
-    <button onclick="enviar()">Enviar</button>
-    <br />
-    <div id="resposta">espaço de resposta</div>
+    <div id="app-container">
+      <h3>Chatbot v3.1</h3>
+      <input type="text" name="mensagem" id="mensagem" />
+      <br />
+      <button onclick="enviar()">Enviar</button>
+      <br />
+      <div id="resposta"></div>
+    </div>
     <script src="codigo.js"></script>
   </body>
 </html>
